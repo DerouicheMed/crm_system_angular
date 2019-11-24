@@ -1,0 +1,14 @@
+<div>
+  exemple works ! <br>
+  This exemple component is inside exemple modules (modules/exemple/exemple.component) <br>
+  The project is devided into 3 main modules:
+  <ul>
+    <li>Core Module : should contain singleton services, 
+      universal components and other features where there’s only once instance per application.</li>
+      <li>Shared Module :  is where any shared components, pipes/filters and services should go. The SharedModule can be imported in any other module when those items will be re-used. 
+        The shared module shouldn’t have any dependency to the rest of the application and should therefore not rely on any other module.</li>
+        <li>Modules: where our project modules will be n every module will contains its proper components n routing. these modules gets loaded lazaly 
+          whenever they are called.
+        </li>
+  </ul>
+</div>
