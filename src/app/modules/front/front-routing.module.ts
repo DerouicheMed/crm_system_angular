@@ -5,7 +5,13 @@ import { FrontComponent } from './front.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './home/home.module#HomeModule'
+    component: FrontComponent,
+    children:[
+      {
+        path: '',
+        loadChildren: './home/home.module#HomeModule'
+      }
+    ]
   },
 
 
