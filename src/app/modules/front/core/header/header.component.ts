@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
 
   //this variable will be used to display the user's username in the top right corner
   //of the header
-  
+  username:string=sessionStorage.getItem('username');
 
   constructor() { }
 

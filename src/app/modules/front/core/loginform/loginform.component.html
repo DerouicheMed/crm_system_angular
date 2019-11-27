@@ -1,13 +1,35 @@
-<div class="answer-form">
-  <form #answerForm="ngForm" (ngSubmit)="onSubmit(answerForm)">
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Enter your answer" name="username" [(ngModel)]="user.username"/>
+
+
+<div class="login-section section mt-90 mb-90">
+    <div class="container">
+        <div class="row">
+            
+            <!-- Login -->
+            <div class="col-12 ">
+                <div class="ee-login">
+                    
+                    <h3>Login to your account</h3>
+                    <p>E&E provide how all this mistaken idea of denouncing pleasure and sing pain born an will give you a complete account of the system, and expound</p>
+                    
+                    <!-- Login Form -->
+                    <form #answerForm="ngForm" (ngSubmit)="onSubmit(answerForm)">
+                        <div class="row">
+                            <div class="col-12 mb-30"><input type="text" placeholder="Type your username " name="username" [(ngModel)]="user.username"></div>
+                            <div class="col-12 mb-20"><input type="password" placeholder="Enter your passward" name="passwd" [(ngModel)]="user.password"></div>
+                            <div class="col-12 mb-15">
+                                
+                                
+                                
+                                <a href="#">Forgotten pasward?</a>
+                                
+                            </div>
+                            <div class="col-12"><input type="submit" value="LOGIN"></div>
+                        </div>
+                    </form>  
+                    <h4>Don’t have account? please click <a href="register">Register</a></h4>
+                </div>
+            </div>
+            
+        </div>
     </div>
-    <div class="form-group">
-      <input type="password" class="form-control" placeholder="********" name="passwd" [(ngModel)]="user.password"/>
-    </div>
-    <div class="form-group">
-      <button class="form-control btn" type="submit">Login</button>
-    </div>
-  </form>
-</div>
+</div><!-- Login Section End -->

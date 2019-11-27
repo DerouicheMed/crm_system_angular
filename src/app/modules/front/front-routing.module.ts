@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FrontComponent } from './front.component';
+import { LoginformComponent } from './core/loginform/loginform.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,10 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: './home/home.module#HomeModule'
+      },
+      {
+        path:'authenticate',
+        component:LoginformComponent
       },
       {
         path: 'billing',
